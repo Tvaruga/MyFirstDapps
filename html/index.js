@@ -4,11 +4,11 @@
 $(document).ready(function() {
     $('#sended').click(function(e2) {
 
-        var $myInusreToken = 'duwNbB4ONSCoDfJxf5jn';
+        var $myInfureToken = 'duwNbB4ONSCoDfJxf5jn';
 
         var request = new XMLHttpRequest();
 
-        request.open('POST', 'https://ropsten.infura.io/'+$myInusreToken);
+        request.open('POST', 'https://ropsten.infura.io/'+$myInfureToken);
 
         request.setRequestHeader('Content-Type', 'application/json');
         request.setRequestHeader('Accept', 'application/json');
