@@ -1,5 +1,8 @@
-<html><head>
+<html>
+<head>
     <meta charset="utf-8">
+    <title>DApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>DApp</title>
     <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
     .en-markup-crop-options {
@@ -10,18 +13,50 @@
         border: 2px rgba(255,255,255,.38) solid !important;
         border-radius: 4px !important;
     }
+
     .en-markup-crop-options div div:first-of-type {
         margin-left: 0px !important;
     }
-    </style></head>
-<body>
+    </style>
+</head>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <h1>Проверить баланс аккаунта в ropsten</h1>
+        <div class="input-group">
+            <input type="text" class="form-control" value="" id="address" placeholder="Your ropsten address..." aria-label="Your ropsten address...">
+		      <span class="input-group-btn">
+		        <button class="btn btn-secondary" id="send" type="button">Go!</button>
+		      </span>
+        </div>
+    </div>
 
-
-<a href="#" id="sended">Количество токенов</a>
+    <div class="col-lg-3"></div>
+</div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div id="result"><h2>Баланс</h2>
+            <p id="count"></p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div id="result"><h2>ShowAccounts</h2>
+            <p id="accounts"> show!</p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/bignumber.js"></script>
 <script src="./index.js"></script>
+<script src="./getAccounts.js"></script>
 
 
 </body></html>
